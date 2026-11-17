@@ -1,0 +1,13 @@
+[theme]
+base = "light"
+primaryColor = "#222222"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#EDEAE5"
+textColor = "#2B2724"
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"      # hides the Deploy button
+
+[browser]
+gatherUsageStats = false

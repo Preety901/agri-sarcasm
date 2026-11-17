@@ -1,0 +1,121 @@
+id,text,lang,label
+1,"Oh wonderful, the subsidy money arrived just in time for next year's harvest.",en,1
+2,"Great, another fertilizer bag that is half sand. Truly a gift from the supplier.",en,1
+3,Thanks a lot for the weather alert that came after my whole field was flooded.,en,1
+4,Brilliant idea to switch off the canal water exactly when the wheat needs it.,en,1
+5,I love how the helpline always answers after the crop has already died.,en,1
+6,"Amazing quality seeds, not even one sprouted. Great business.",en,1
+7,"Lovely, the mandi price dropped again right after I harvested. What perfect timing!",en,1
+8,"Wow, the insurance claim got approved only 18 months after the drought. So fast!",en,1
+9,Nothing makes me happier than standing in line for urea for six hours.,en,1
+10,"Fantastic, the pesticide killed everything except the pests.",en,1
+11,"Sure, because an officer visiting my field once in five years is totally enough support.",en,1
+12,"What a surprise, the tractor loan office is closed again on the day I came.",en,1
+13,"Great job, the electricity comes at 2 am to run the tubewell. Very farmer friendly.",en,1
+14,I am so thankful the new app crashes every time I try to register for the scheme.,en,1
+15,"Wonderful, my paddy is enjoying a free swimming session thanks to the unseasonal rain.",en,1
+16,"Excellent service, I only had to call the Kisan helpline twenty times.",en,1
+17,How kind of the dealer to sell me expired pesticide at full price.,en,1
+18,"Perfect, the soil testing report came back after the sowing season ended.",en,1
+19,"Oh yes, the promise of doubling farmer income is working great, my costs doubled.",en,1
+20,Lovely forecast said sunny and it hailed the whole afternoon. Very accurate.,en,1
+21,Which fertilizer is best for wheat in sandy soil?,en,0
+22,When is the next installment of PM-Kisan going to be released?,en,0
+23,How can I control aphids on mustard crop without chemicals?,en,0
+24,What is the right time to sow paddy in Uttar Pradesh?,en,0
+25,Please tell me how to apply for a Kisan Credit Card.,en,0
+26,My tomato leaves are curling and turning yellow. What disease is this?,en,0
+27,What is the minimum support price for maize this year?,en,0
+28,How much water does sugarcane need per irrigation?,en,0
+29,Can you suggest a seed variety that tolerates drought?,en,0
+30,Where can I get my soil tested near my village?,en,0
+31,The subsidy for drip irrigation has not been credited yet. Please check the status.,en,0
+32,I received fake fertilizer from a shop. How do I file a complaint?,en,0
+33,How do I register for the crop insurance scheme?,en,0
+34,Will it rain in the next three days in my district?,en,0
+35,What is the dosage of urea per acre for potato?,en,0
+36,The canal water was not released this week and my crop is drying. Please help.,en,0
+37,Which mandi is giving the best price for onions today?,en,0
+38,How to store wheat grain safely to avoid insects?,en,0
+39,I want to know the process to get a subsidy on a tractor.,en,0
+40,What is the best organic method to improve soil fertility?,en,0
+41,"वाह सरकार, सब्सिडी का पैसा तब आया जब फसल कट चुकी थी। कितनी तेज़ सेवा है!",hi,1
+42,"बहुत बढ़िया खाद मिली, आधी तो मिट्टी निकली।",hi,1
+43,"शुक्रिया मौसम विभाग, बाढ़ आने के बाद चेतावनी भेजने के लिए।",hi,1
+44,"क्या कमाल के बीज हैं, एक भी अंकुर नहीं निकला।",hi,1
+45,"नहर में पानी तभी छोड़ा जब खेत सूख चुके थे। वाह, क्या समय है!",hi,1
+46,हेल्पलाइन वाले इतने अच्छे हैं कि फसल मरने के बाद फोन उठाते हैं।,hi,1
+47,"मंडी में भाव गिर गया, ठीक कटाई के बाद। क्या किस्मत है!",hi,1
+48,"बीमा का पैसा सिर्फ दो साल में मिल गया, कितनी जल्दी!",hi,1
+49,यूरिया के लिए छह घंटे लाइन में खड़े रहना मेरा पसंदीदा काम है।,hi,1
+50,दवा ने सारे कीड़े छोड़कर सिर्फ फसल को मारा। बहुत असरदार!,hi,1
+51,"बिजली रात दो बजे आती है, किसानों का कितना ख्याल रखते हैं।",hi,1
+52,"ऐप तो बहुत अच्छा है, हर बार रजिस्ट्रेशन पर बंद हो जाता है।",hi,1
+53,"बारिश ने मेरे धान के खेत को तालाब बना दिया, कितनी मेहरबानी!",hi,1
+54,"अफसर साहब पाँच साल में एक बार खेत देखने आए, इतनी मदद काफी है।",hi,1
+55,"दुकानदार ने एक्सपायर दवा पूरे दाम में दी, कितना ईमानदार है!",hi,1
+56,"मिट्टी जाँच की रिपोर्ट बुवाई के बाद आई, वाह क्या रफ़्तार है।",hi,1
+57,"सरकार ने आय दोगुनी करने का वादा किया था, मेरी लागत दोगुनी हो गई।",hi,1
+58,मौसम की भविष्यवाणी धूप की थी और पूरे दिन ओले गिरे। बड़ी सटीक!,hi,1
+59,"ट्रैक्टर लोन का दफ्तर फिर बंद मिला, कितनी अच्छी सुविधा है।",hi,1
+60,"वाह, दो महीने बाद खाते में तीन सौ रुपये आए, अब तो मैं अमीर हो गया।",hi,1
+61,गेहूं के लिए सबसे अच्छी खाद कौन सी है?,hi,0
+62,पीएम किसान की अगली किस्त कब आएगी?,hi,0
+63,सरसों में माहू कीट को कैसे रोकें?,hi,0
+64,उत्तर प्रदेश में धान बोने का सही समय क्या है?,hi,0
+65,किसान क्रेडिट कार्ड के लिए आवेदन कैसे करें?,hi,0
+66,"टमाटर की पत्तियाँ मुड़ रही हैं और पीली हो रही हैं, यह कौन सा रोग है?",hi,0
+67,इस साल मक्के का न्यूनतम समर्थन मूल्य कितना है?,hi,0
+68,गन्ने की एक सिंचाई में कितना पानी चाहिए?,hi,0
+69,सूखा सहने वाली बीज की किस्म बताइए।,hi,0
+70,मेरे गाँव के पास मिट्टी की जाँच कहाँ होती है?,hi,0
+71,"ड्रिप सिंचाई की सब्सिडी अभी तक खाते में नहीं आई, कृपया स्थिति बताएं।",hi,0
+72,"दुकान से नकली खाद मिली है, शिकायत कैसे दर्ज करूं?",hi,0
+73,फसल बीमा योजना में पंजीकरण कैसे करें?,hi,0
+74,अगले तीन दिनों में मेरे जिले में बारिश होगी क्या?,hi,0
+75,आलू में प्रति एकड़ यूरिया कितना डालें?,hi,0
+76,"इस हफ्ते नहर में पानी नहीं छोड़ा गया और फसल सूख रही है, कृपया मदद करें।",hi,0
+77,आज प्याज का सबसे अच्छा भाव किस मंडी में है?,hi,0
+78,गेहूं को कीड़ों से बचाकर कैसे रखें?,hi,0
+79,ट्रैक्टर पर सब्सिडी लेने की प्रक्रिया क्या है?,hi,0
+80,मिट्टी की उर्वरता बढ़ाने का सबसे अच्छा जैविक तरीका क्या है?,hi,0
+81,"Wah re sarkar, subsidy ka paisa tab aaya jab fasal kat chuki thi. Kya speed hai!",hinglish,1
+82,"Bahut badhiya khaad mili, aadhi toh mitti nikli.",hinglish,1
+83,"Thanks mausam vibhag, baadh aane ke baad alert bhejne ke liye.",hinglish,1
+84,"Kamaal ke beej hain, ek bhi ugaa nahi.",hinglish,1
+85,"Nahar mein paani tab chhoda jab khet sookh gaye. Wah, kya timing hai!",hinglish,1
+86,Helpline wale itne acche hain ki fasal marne ke baad phone uthate hain.,hinglish,1
+87,"Mandi mein bhaav gir gaya, bilkul katai ke baad. Kya kismat hai!",hinglish,1
+88,"Insurance ka paisa sirf do saal mein aa gaya, kitni jaldi!",hinglish,1
+89,Urea ke liye 6 ghante line mein khade rehna mera favourite kaam hai.,hinglish,1
+90,Dawai ne saare keede chhod ke sirf fasal maar di. Bahut asardaar!,hinglish,1
+91,"Bijli raat ko 2 baje aati hai, kisano ka kitna khayal rakhte hain.",hinglish,1
+92,"App toh mast hai, har baar registration pe crash ho jata hai.",hinglish,1
+93,"Baarish ne mere dhaan ke khet ko talaab bana diya, kitni meherbani!",hinglish,1
+94,"Officer sahab 5 saal mein ek baar khet dekhne aaye, itni madad kaafi hai.",hinglish,1
+95,"Dukaandaar ne expired dawai poore daam mein di, kitna imaandar hai!",hinglish,1
+96,"Mitti jaanch ki report buwai ke baad aayi, wah kya raftaar hai.",hinglish,1
+97,"Sarkar ne income double karne ka wada kiya tha, meri lagat double ho gayi.",hinglish,1
+98,Forecast mein dhoop thi aur poora din ole gire. Badi accurate prediction!,hinglish,1
+99,"Tractor loan ka office phir band mila, kitni badhiya suvidha hai.",hinglish,1
+100,"Wah, 2 mahine baad khate mein 300 rupaye aaye, ab toh main ameer ho gaya.",hinglish,1
+101,Gehun ke liye sabse achi khaad kaun si hai?,hinglish,0
+102,PM Kisan ki agli kist kab aayegi?,hinglish,0
+103,Sarson mein maahu keede ko kaise roke?,hinglish,0
+104,Uttar Pradesh mein dhaan bone ka sahi samay kya hai?,hinglish,0
+105,Kisan Credit Card ke liye apply kaise karein?,hinglish,0
+106,"Tamatar ki patti mud rahi hai aur peeli ho rahi hai, ye kaunsa rog hai?",hinglish,0
+107,Is saal makke ka MSP kitna hai?,hinglish,0
+108,Ganne ki ek sinchai mein kitna paani chahiye?,hinglish,0
+109,Sookha sehne wali beej ki variety bataiye.,hinglish,0
+110,Mere gaon ke paas mitti ki jaanch kahan hoti hai?,hinglish,0
+111,"Drip irrigation ki subsidy abhi tak khate mein nahi aayi, please status bataiye.",hinglish,0
+112,"Dukaan se nakli khaad mili hai, complaint kaise darj karun?",hinglish,0
+113,Fasal bima yojana mein registration kaise karein?,hinglish,0
+114,Agle teen din mein mere zile mein baarish hogi kya?,hinglish,0
+115,Aalu mein per acre urea kitna daalein?,hinglish,0
+116,"Is hafte nahar mein paani nahi chhoda gaya aur fasal sookh rahi hai, please madad karein.",hinglish,0
+117,Aaj pyaaz ka sabse accha bhaav kis mandi mein hai?,hinglish,0
+118,Gehun ko keedon se bachakar kaise rakhein?,hinglish,0
+119,Tractor par subsidy lene ki process kya hai?,hinglish,0
+120,Mitti ki upjaau shakti badhane ka sabse accha organic tarika kya hai?,hinglish,0

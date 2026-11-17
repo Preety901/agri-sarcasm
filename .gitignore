@@ -1,0 +1,11 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+data/emb_cache/
+results/*.csv
+results/*.png
+*.npy
+.env

@@ -1,0 +1,14 @@
+# **************************************
+# Project Runnning commands:
+# **************************************
+
+streamlit run src/app.py
+
+
+
+
+
+
+
+git config --local user.name "Preety901"
+git config --local user.email "VishnuGupta2098@gmail.com"
