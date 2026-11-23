@@ -13,28 +13,34 @@ POS_CUES = [
     "fantastic", "excellent", "thanks", "thankful", "so kind", "how kind", "love how",
     "nothing makes me happier", "kamaal", "badhiya", "mast hai", "meherbani", "kitni jaldi",
     "kya timing", "kya kismat", "favourite", "bahut acche", "itne acche", "kitna imaandar",
-    "kitni badhiya", "asardaar", "accurate", "friendly", "so fast",
+    "kitni badhiya", "asardaar", "accurate", "friendly", "so fast", "achha", "accha",
+    "bahut badhiya", "zabardast", "dhanyawad", "shukriya",
     "वाह", "बढ़िया", "कमाल", "शुक्रिया", "मेहरबानी", "कितनी जल्दी", "क्या किस्मत",
     "क्या समय", "पसंदीदा", "बहुत असरदार", "बड़ी सटीक", "कितना ईमानदार", "कितनी अच्छी",
-    "इतने अच्छे", "क्या रफ़्तार", "काफी है", "ख्याल रखते",
+    "इतने अच्छे", "क्या रफ़्तार", "काफी है", "ख्याल रखते", "अच्छा", "बहुत बढ़िया", "ज़बरदस्त",
 ]
 NEG_CUES = [
     "fake", "half sand", "flood", "died", "dead", "dry", "expired", "hail", "crash",
     "closed", "after", "twenty times", "six hours", "2 am", "doubled", "not even one",
     "killed", "sookh", "baadh", "ole ", "band", "kat chuki", "marne ke baad", "mitti nikli",
     "ugaa nahi", "gir gaya", "6 ghante", "2 baje", "double", "lagat", "talaab", "expired",
+    "kharab", "kharab ho gayi", "barbaad", "sukh gayi", "keede",
     "बाढ़", "सूख", "नहीं निकला", "मरने", "ओले", "बंद", "एक्सपायर", "आधी तो मिट्टी",
     "कट चुकी", "घंटे", "दो बजे", "दोगुनी", "लागत", "तालाब", "के बाद", "गिर गया", "मारा",
+    "खराब", "बर्बाद", "सूख गई", "कीड़े",
 ]
 FEATURE_NAMES = ["pos_cues", "neg_cues", "pos_and_neg", "exclaim"]
+
 
 def _count(text, cues):
     t = text.lower()
     return sum(1 for c in cues if c in t)
 
+
 def features(text: str) -> list:
     p, n = _count(text, POS_CUES), _count(text, NEG_CUES)
     return [min(p, 3), min(n, 3), float(p > 0 and n > 0), float("!" in text)]
+
 
 def feature_matrix(texts) -> np.ndarray:
     return np.array([features(t) for t in texts], dtype=float)

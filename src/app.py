@@ -222,7 +222,7 @@ with right:
                 im = Image.open(img).convert("RGB")
                 with st.spinner("Analysing photo… (first time downloads CLIP)"):
                     dmg = damage_score(im); inc = cross_modal_incongruity(q, im)
-                p = min(1.0, p + 0.3 * inc)
+                p = min(1.0, p + 0.5 * inc)
                 extra = f" · {T['photo']} {dmg:.2f}" + (f" · {T['incon']}" if inc > 0 else "")
                 photo_note = f'<div class="small" style="margin-top:8px;">{T["photo_note"]}</div>'
                 small = im.copy(); small.thumbnail((700, 700)); buf = io.BytesIO(); small.save(buf, "JPEG", quality=85)

@@ -8,6 +8,7 @@ from .incongruity import features
 PROMPTS = ["a photo of a healthy green crop field", "a photo of a damaged, dry or diseased crop field"]
 _clip = None
 
+
 def damage_score(image):
     """Returns P(damaged) in [0,1] for a PIL image."""
     global _clip
@@ -21,6 +22,10 @@ def damage_score(image):
     with torch.no_grad():
         return m(**inp).logits_per_image.softmax(-1)[0, 1].item()
 
+
 def cross_modal_incongruity(text, image):
+    dmg = damage_score(image)
     pos = features(text)[0] > 0
-    return damage_score(image) if pos else 0.0
+    if pos:
+        return dmg
+    return 0.6 * dmg if dmg >= 0.5 else 0.0
