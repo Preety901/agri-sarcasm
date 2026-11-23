@@ -162,8 +162,8 @@ with st.sidebar:
     k = st.slider("Few-shot examples per class (k)", 1, 20, 8)
     speak = st.checkbox("Speak the reply", True)
     use_llm = st.checkbox("Advisory answer with local LLM (needs Ollama)", False)
-    wname = st.selectbox("Speech model", list(WHISPER), 0)
-    slang = st.selectbox("Speech language", list(SPEECH_LANGS), 0)
+    wname = st.selectbox("Speech model", list(WHISPER), 1)
+    slang = st.selectbox("Speech language", list(SPEECH_LANGS), 1)
 model = load(k)
 
 EXAMPLES = {"Hinglish": "Wah re sarkar, khaad toh aadhi mitti nikli!",
@@ -201,7 +201,7 @@ with left:
                     st.session_state["tr_key"] = key
                     try:
                         from src.speech import transcribe
-                        with st.spinner("Transcribing… (first time it downloads the speech model — watch Terminal)"):
+                        with st.spinner("Transcribing… (first time downloads the speech model)"):
                             st.session_state["transcript"] = transcribe(data, WHISPER[wname], SPEECH_LANGS[slang])
                     except Exception as e:
                         st.session_state["transcript"] = ""
@@ -215,7 +215,7 @@ with right:
         st.markdown('<div class="ttl">A closer look</div>', unsafe_allow_html=True)
         if go and q.strip():
             lg = detect(q); T = UI[lg]
-            p = float(model.predict_proba([q])[0]); p_text = p; extra = ""; photo_html = ""
+            p = float(model.predict_proba([q])[0]); p_text = p; extra = ""; photo_html = ""; photo_note = ""
             if img is not None:
                 from PIL import Image
                 from src.image_incongruity import damage_score, cross_modal_incongruity
@@ -224,6 +224,7 @@ with right:
                     dmg = damage_score(im); inc = cross_modal_incongruity(q, im)
                 p = min(1.0, p + 0.3 * inc)
                 extra = f" · {T['photo']} {dmg:.2f}" + (f" · {T['incon']}" if inc > 0 else "")
+                photo_note = f'<div class="small" style="margin-top:8px;">{T["photo_note"]}</div>'
                 small = im.copy(); small.thumbnail((700, 700)); buf = io.BytesIO(); small.save(buf, "JPEG", quality=85)
                 photo_html = f'<img class="photo" src="data:image/jpeg;base64,{base64.b64encode(buf.getvalue()).decode()}">'
             sarc = p >= 0.5
@@ -245,16 +246,26 @@ with right:
               <div class="bar"><div style="width:{p*100:.0f}%"></div></div>
               <div class="route">{route}</div>
               <div class="reply">{msg}</div>{answer_html}
-              <div class="small" style="margin-top:10px;">{T['text_only']}: {p_text*100:.0f}%{extra}</div>
+              <div class="small" style="margin-top:10px;">{T['text_only']}: {p_text*100:.0f}%{extra}</div>{photo_note}
               {photo_html}
             </div>""", unsafe_allow_html=True)
             st.session_state.history.insert(0, dict(t=time.strftime("%H:%M:%S"), q=q[:90], lg=LANG_NAME[lg],
                                                     sarc=sarc, p=p))
             if speak:
+                spoken_text = msg if lg == "en" else SPOKEN["sarc" if sarc else "lit"]
                 try:
-                    subprocess.Popen(["say", "-v", VOICE[lg], msg if lg == "en" else SPOKEN["sarc" if sarc else "lit"]])
+                    subprocess.Popen(["say", "-v", VOICE[lg], spoken_text])
                 except OSError:
                     pass  # 'say' exists only on macOS
+                try:
+                    from gtts import gTTS
+                    tts_lang = "en" if lg == "en" else "hi"
+                    mp3_buf = io.BytesIO()
+                    gTTS(text=spoken_text, lang=tts_lang).write_to_fp(mp3_buf)
+                    mp3_buf.seek(0)
+                    st.audio(mp3_buf.getvalue(), format="audio/mp3", autoplay=True)
+                except Exception as e:
+                    st.caption(f"Voice playback unavailable: {e}")
         else:
             st.markdown('<div class="ph">Your result will appear here.<br>Enter a query on the left and press <b>Analyse</b>.</div>',
                         unsafe_allow_html=True)
